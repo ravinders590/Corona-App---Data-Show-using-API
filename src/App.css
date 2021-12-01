@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.covid-wrapper {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.covid-container {
+    min-width: 40%;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+}
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.search input.form-control {
+    margin-right: 10px;
+}
+.corona-data-show ul {
+    list-style: none;
+}
+
+.corona-data-show ul li .info {
+    display: flex;
+    align-items: center;
+}
+.corona-data-show ul li .info {
+    height: 60px;
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px 10px;
+}
+.corona-data-show ul li .info h3 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.corona-data-show ul li .info h3 span {
+    display: block;
+    font-size: 12px;
+}
+
+.corona-data-show ul li .info .icon {
+    flex: 0 0 10%;
+}
+
+.corona-data-show ul li .info .data-show {
+    flex: 0 0 89%;
+}
+.corona-data-show ul li {
+    flex: 0 0 33.33%;
+}
+.corona-data-show ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+.corona-data-show ul li .info.blue {
+    background-color: #1abc9c;
+    color: #fff;
+}
+.corona-data-show ul li .info.pink {
+    background-color: #9b59b6;
+}
+.table-responsive table.table tr th {
+    font-size: 14px;
+}
+
+.table-responsive table.table tr td {
+    font-size: 15px;
+}
