@@ -12,25 +12,17 @@ function App() {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }*/
   const getCountries = async (res) => {
-    /*fetch("https://covid-193.p.rapidapi.com/statistics", {
+    fetch("https://covid-193.p.rapidapi.com/statistics", {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "covid-193.p.rapidapi.com",
         "x-rapidapi-key": "159d38567emshbb55294f227f01cp1178eajsn009fc4337745"
       }
-    })*/
-    fetch("https://twilio-sms.p.rapidapi.com/2010-04-01/Account", {
-    "method": "GET",
-    "headers": {
-      "x-rapidapi-host": "twilio-sms.p.rapidapi.com",
-      "x-rapidapi-key": "159d38567emshbb55294f227f01cp1178eajsn009fc4337745"
-    }
-  })
+    })
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
       const country_data = data.response;
       country_data.filter((item) =>{
         const country = item.country;
